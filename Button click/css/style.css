@@ -22,10 +22,6 @@
    color: #ffffff;
 }
 
-.button:focus-within {
-   color: #d94f5c;
-}
-
 .button:before {
    display: block;
    content: "";
@@ -50,10 +46,10 @@
    transition: 0.3s;
 }
 
-.button:focus.button:before {
+.button:hover.button:before {
    width: 100%;
 }
-.button:focus.button:after {
+.button:hover.button:after {
    width: 100%;
 }
 
@@ -92,10 +88,10 @@
    transition: 0.3s;
 }
 
-.button__inner:focus.button__inner:before {
+.button__inner:hover.button__inner:before {
    height: 100%;
 }
-.button__inner:focus.button__inner:after {
+.button__inner:hover.button__inner:after {
    height: 100%;
 }
 
@@ -104,3 +100,8 @@ span {
    font-weight: bold;
    text-transform: uppercase;
 }
+
+.button:hover {
+   color: #d94f5c;
+}
+
